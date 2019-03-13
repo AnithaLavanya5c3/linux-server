@@ -1,12 +1,10 @@
-# linux-server
-It is about how we access a wb application online with aithentication.
 linux_server_configuration
 This project about create a linux server and using it to host our web application
 IP Address
-IP Address: 13.127.248.55
+IP Address: 13.127.248.55 
 Host Name
-Host Name: 
-Amazon Lightsail server setup:
+Host Name: ec2-13-127-248-55.ap-south-1.compute.amazonaws.com
+Amazon Lightsail server setup
 Open Amazon Lightsail website and create a account in it.
 After creating an account go to log in page.
 After log in, click on Create Instance.
@@ -24,7 +22,7 @@ Custom           UDP           123
 Custom           TCP           2200
 Server Configuration
 Save the .pem file where is your vagrant file is located.
-Now we have to move/copy our .pem file into .ssh folder. I've saved my file as ak.pem. To move/copy our .pem file follow below command.
+Now we have to move/copy our .pem file into .ssh folder. I've saved my file as ani.pem. To move/copy our .pem file follow below command.
  1. sudo cp -R /vagrant/YOURFILENAME.pem ~/.ssh/YOURFILENAME.pem
 We need to make our public key usable and secure. Going back to your terminal and write the command
  2. sudo chmod 600 ~/.ssh/YOURFILENAME.pem
